@@ -8,5 +8,5 @@ dependencies:
 
 test:
   override:
-    - gulp test
-    - gulp coveralls
+    - npm run test
+    - npm run coveralls
