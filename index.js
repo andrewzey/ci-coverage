@@ -1,7 +1,8 @@
 var whatIsIt = function(input){
-  if (arguments.length === 0) throw new Error('you must pass a single argument');
-
-  if (Array.isArray(input)) {
+  if (arguments.length === 0) {
+    throw new Error('you must pass a single argument');
+  }
+  else if (Array.isArray(input)) {
     return "array";
   }
   else if (input === null) {
@@ -19,7 +20,9 @@ var whatIsIt = function(input){
   else if (typeof input === "boolean") {
     return "boolean";
   }
-  else if (typeof input === "undefined") {
+  else {
     return "undefined";
   }
 };
+
+module.exports.whatIsIt = whatIsIt;
