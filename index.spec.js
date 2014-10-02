@@ -25,6 +25,18 @@ describe('whatIsIt()', function () {
     expect(whatIsIt('Hello')).to.equal("string");
   });
 
+  it('should return "number" for a number input', function () {
+    expect(whatIsIt(42)).to.equal("number");
+  });
+
+  it('should return "boolean" for a boolean input', function () {
+    expect(whatIsIt(true)).to.equal("boolean");
+  });
+
+  it('should return "undefined" for an undefined input', function () {
+    expect(whatIsIt(undefined)).to.equal("undefined");
+  });
+
 });
 
 
@@ -47,17 +59,7 @@ describe('whatIsIt()', function () {
 
 
 
-// it('should return "number" for a number input', function () {
-  //   expect(whatIsIt(42)).to.equal("number");
-  // });
 
-  // it('should return "boolean" for a boolean input', function () {
-  //   expect(whatIsIt(true)).to.equal("boolean");
-  // });
-
-  // it('should return "undefined" for an undefined input', function () {
-  //   expect(whatIsIt(undefined)).to.equal("undefined");
-  // });
 
 
 
