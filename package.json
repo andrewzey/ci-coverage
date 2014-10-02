@@ -1,0 +1,26 @@
+{
+  "name": "ci-coverage",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^1.9.2",
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewzey/ci-coverage.git"
+  },
+  "author": "Andrew Zey <andrew@andrewzey.com> (http://andrewzey.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewzey/ci-coverage/issues"
+  },
+  "homepage": "https://github.com/andrewzey/ci-coverage"
+}
